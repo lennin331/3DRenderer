@@ -1,3 +1,3 @@
 # 3DRenderer
 
-<img src="screens/cube.git" width=400>
+<img src="screens/cube.git" width="400">
