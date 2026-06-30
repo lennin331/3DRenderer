@@ -16,12 +16,12 @@ Anything that can spit out 12 lines on a screen's good.
       - The 8 points live in 3D space as `(x, y, z)` floats, centered on the origin like a cube that hasn't yet learned humility. No structs from a library, just a raw array because we're not animals who import things.
 
   2. On the second day, God said "let there be rotation," and so there was `sin()` and `cos()`, borrowed strictly from `<math.h>` because even God outsources trigonometry.
-      - Each vertex gets multiplied through a rotation matrix on the X, Y, and Z axes, one frame at a time. [ [Rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix) ] <br>
+      - Each vertex gets multiplied through a rotation matrix on the X, Y, and Z axes, one frame at a time.<br> [ [Rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix) ] <br>
       *if you, too, forgot linear algebra*.
       - This is the part where Bob starts to feel something. We don't know what. We don't ask.
 
   3. On the third day, perspective projection was born, because a cube floating in true 3D space is useless to a 2D monitor that has never left flatland.
-      - Every rotated 3D point gets squished into 2D using a basic perspective divide: `x' = x * fov / (z + distance)` <br>
+      - Every rotated 3D point gets squished into 2D using a basic perspective divide:<br> `x' = x * fov / (z + distance)` <br>
        [ [Perspective projection](https://en.wikipedia.org/wiki/3D_projection) ]
       - distance is just a fudge factor that keeps Bob from collapsing into a singularity on screen. Tune it until it looks less like abstract art.
 
